@@ -154,10 +154,9 @@ class CovidProject():
         # pass them through the date()
         db_date = date(int(my_date[0:4]), int(
             my_date[5:7]), int(my_date[8:10]))
-        print(db_date)
         current_date = date(int(current_date_readable[0:4]), int(
             current_date_readable[5:7]), int(current_date_readable[8:10]))
-        print(current_date)
+  
 
         # make a list of the needed days
         my_dates_datetime = pd.date_range(
